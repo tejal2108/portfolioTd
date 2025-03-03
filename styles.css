@@ -6,11 +6,13 @@
 html, body {
     overflow-x: hidden; /* Fix horizontal scrolling */
     overflow-y: auto; /* Allows normal vertical scroll */
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    background-color: var(--bg-colour);
 }
-
 .mainDiv {
     width: 100%;
     min-height: 100vh; /* Ensures it covers full page */
@@ -60,6 +62,20 @@ html, body {
     /* text-transform: uppercase; */
     letter-spacing: 1px;
 }
+
+/* Quick Bar */
+.quikBar {
+    width: 100%;
+    background: var(--quickbar-bg);
+    padding: 15px 0;
+    text-align: center;
+    position: fixed; /* Makes it stay at top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it's above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Navigation Links */
 .bar {
@@ -146,37 +162,7 @@ body {
     --text-color: #ffffff; /* Text color for quick bar */
 }
 
-/* Global Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth; /* Smooth scrolling */
-    background-color: var(--bg-colour);
-}
 
-/* Main Div */
-.mainDiv {
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--bg-colour);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Quick Bar */
-.quikBar {
-    width: 100%;
-    background: var(--quickbar-bg);
-    padding: 15px 0;
-    text-align: center;
-    position: fixed; /* Makes it stay at top */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensures it's above other content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 /* Quick Bar Title */
 .quikBar .portfolio {
@@ -820,8 +806,36 @@ section h1 {
 }
 
 
-@media (max-width: 768px) {
-    div {
-        height: auto !important;
-    }
+/* Root Variables */
+:root {
+    --background-color: #242424;
+    --text-color: white;
+    --accent-color: yellow;
+    --header-background: black;
+    --border-color: white;
+    --link-color: black;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    height: 50px;
+    background-color: var(--header-background);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.header
