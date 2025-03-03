@@ -12,6 +12,19 @@ html, body {
 }
 
 
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+section, div {
+    min-height: auto;
+}
+
+
 .mainDiv {
     width: 100%;
     min-height: 100vh; /* Ensures it covers full page */
