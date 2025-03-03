@@ -1,0 +1,74 @@
+:root {
+    color: #4CAF50; /* Green accent */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #66ff99; /* Lighter green on hover */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #3d3d3d;  /* Dark Grey */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #f8f8f8;
+    transform: scale(1.1);
+}
+
+/* Copyright Section */
+.copyright {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: auto;
+    min-height: 100vh; /* Fix: Prevents unnecessary height */
+    overflow-x: hidden;
+}
+
+section, div {
+    min-height: auto; /* Fix: Prevents forced large height */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    html, body, section, div {
+        height: auto !important;
+        min-height: auto !important;
+    }
+}
