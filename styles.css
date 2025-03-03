@@ -836,12 +836,7 @@ section, div {
     display: table;
     clear: both;
 }
-display: flex;
-flex-wrap: wrap; /* Allows wrapping */
-align-items: stretch; /* Ensures uniform height */
-overflow: visible;
-position: relative;
-z-index: 1;
+
 @media (max-width: 768px) {
     div {
         height: auto !important;
