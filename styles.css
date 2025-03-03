@@ -829,7 +829,7 @@ html, body {
     overflow-x: hidden;
 }
 section, div {
-    min-height: auto;
+    min-height: 80vh;
 }
 .clearfix::after {
     content: "";
