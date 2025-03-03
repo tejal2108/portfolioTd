@@ -211,7 +211,7 @@ body, html {
 /* Sections */
 section {
     width: 100%;
-    min-height: 60vh;
+    min-height: 80vh;
     padding: 100px 20px 40px; /* Adds space from quick bar */
     text-align: center;
     scroll-margin-top: 60px; /* Offset for smooth scrolling */
