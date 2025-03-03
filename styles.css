@@ -825,11 +825,11 @@ section h1 {
 }
 html, body {
     height: auto;
-    min-height: 100vh;
+    min-height: 1000vh;
     overflow-x: hidden;
 }
 section, div {
-    min-height: 80vh;
+    min-height: 180vh;
 }
 .clearfix::after {
     content: "";
