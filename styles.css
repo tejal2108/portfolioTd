@@ -820,23 +820,6 @@ section h1 {
 }
 
 
-* {
-    box-sizing: border-box;
-}
-html, body {
-    height: auto;
-    min-height: 1000vh;
-    overflow-x: hidden;
-}
-section, div {
-    min-height: 180vh;
-}
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 @media (max-width: 768px) {
     div {
         height: auto !important;
